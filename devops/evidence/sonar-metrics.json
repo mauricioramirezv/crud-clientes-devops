@@ -1,0 +1,43 @@
+{
+  "component": {
+    "key": "crud-clientes-devops",
+    "name": "CRUD Clientes DevOps",
+    "qualifier": "TRK",
+    "measures": [
+      {
+        "metric": "coverage",
+        "value": "99.5",
+        "bestValue": false
+      },
+      {
+        "metric": "duplicated_lines_density",
+        "value": "0.0",
+        "bestValue": true
+      },
+      {
+        "metric": "software_quality_security_rating",
+        "value": "1.0",
+        "bestValue": true
+      },
+      {
+        "metric": "ncloc",
+        "value": "698"
+      },
+      {
+        "metric": "violations",
+        "value": "4",
+        "bestValue": false
+      },
+      {
+        "metric": "software_quality_reliability_rating",
+        "value": "1.0",
+        "bestValue": true
+      },
+      {
+        "metric": "software_quality_maintainability_rating",
+        "value": "1.0",
+        "bestValue": true
+      }
+    ]
+  }
+}

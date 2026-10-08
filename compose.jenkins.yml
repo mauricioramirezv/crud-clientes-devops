@@ -1,0 +1,29 @@
+name: crud-clientes-devops
+services:
+  jenkins:
+    build: ./jenkins-image
+    image: crud-clientes-jenkins:local
+    container_name: jenkins
+    # Local academic Docker-outside-of-Docker lab; socket access is host privileged.
+    user: root
+    restart: unless-stopped
+    ports:
+      - 127.0.0.1:8080:8080
+    environment:
+      JAVA_OPTS: -Djenkins.install.runSetupWizard=false
+    volumes:
+      - jenkins_home:/var/jenkins_home
+      - /var/run/docker.sock:/var/run/docker.sock
+    secrets:
+      - jenkins_password
+    networks:
+      - devops-net
+volumes:
+  jenkins_home:
+    name: jenkins_home
+secrets:
+  jenkins_password:
+    file: ${JENKINS_PASSWORD_FILE:?Set JENKINS_PASSWORD_FILE}
+networks:
+  devops-net:
+    external: true

@@ -1,0 +1,215 @@
+{
+  "total": 4,
+  "p": 1,
+  "ps": 500,
+  "paging": {
+    "pageIndex": 1,
+    "pageSize": 500,
+    "total": 4
+  },
+  "effortTotal": 8,
+  "issues": [
+    {
+      "key": "b72358bc-1de0-421b-a0b0-cd1ad7485e0b",
+      "rule": "python:S8409",
+      "severity": "MINOR",
+      "component": "crud-clientes-devops:backend/src/clientes/api.py",
+      "project": "crud-clientes-devops",
+      "line": 101,
+      "hash": "9a1328cdd478efb638cda2aee0a24bdf",
+      "textRange": {
+        "startLine": 101,
+        "endLine": 101,
+        "startOffset": 4,
+        "endOffset": 35
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Remove this redundant \"response_model\" parameter; it duplicates the return type annotation.",
+      "effort": "2min",
+      "debt": "2min",
+      "author": "mauricioramirezv@yahoo.com",
+      "tags": [
+        "fastapi",
+        "api",
+        "redundant"
+      ],
+      "creationDate": "2026-09-17T00:01:01+0000",
+      "updateDate": "2026-09-22T15:47:03+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "CLEAR",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "LOW"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "prioritizedRule": false,
+      "fromSonarQubeUpdate": false,
+      "internalTags": [],
+      "linkedTicketStatus": "NOT_LINKED"
+    },
+    {
+      "key": "ad36fe27-4a61-4ad8-92c9-c5f717f49e70",
+      "rule": "python:S8409",
+      "severity": "MINOR",
+      "component": "crud-clientes-devops:backend/src/clientes/api.py",
+      "project": "crud-clientes-devops",
+      "line": 109,
+      "hash": "8482e26924062729c3b45816e971e8fe",
+      "textRange": {
+        "startLine": 109,
+        "endLine": 109,
+        "startOffset": 22,
+        "endOffset": 59
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Remove this redundant \"response_model\" parameter; it duplicates the return type annotation.",
+      "effort": "2min",
+      "debt": "2min",
+      "author": "mauricioramirezv@yahoo.com",
+      "tags": [
+        "fastapi",
+        "api",
+        "redundant"
+      ],
+      "creationDate": "2026-09-17T00:01:01+0000",
+      "updateDate": "2026-09-22T15:47:03+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "CLEAR",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "LOW"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "prioritizedRule": false,
+      "fromSonarQubeUpdate": false,
+      "internalTags": [],
+      "linkedTicketStatus": "NOT_LINKED"
+    },
+    {
+      "key": "97029c68-3d20-4707-82c4-7249dc4ca86a",
+      "rule": "python:S8409",
+      "severity": "MINOR",
+      "component": "crud-clientes-devops:backend/src/clientes/api.py",
+      "project": "crud-clientes-devops",
+      "line": 119,
+      "hash": "9a1328cdd478efb638cda2aee0a24bdf",
+      "textRange": {
+        "startLine": 119,
+        "endLine": 119,
+        "startOffset": 4,
+        "endOffset": 35
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Remove this redundant \"response_model\" parameter; it duplicates the return type annotation.",
+      "effort": "2min",
+      "debt": "2min",
+      "author": "mauricioramirezv@yahoo.com",
+      "tags": [
+        "fastapi",
+        "api",
+        "redundant"
+      ],
+      "creationDate": "2026-09-17T00:01:01+0000",
+      "updateDate": "2026-09-22T15:47:03+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "CLEAR",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "LOW"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "prioritizedRule": false,
+      "fromSonarQubeUpdate": false,
+      "internalTags": [],
+      "linkedTicketStatus": "NOT_LINKED"
+    },
+    {
+      "key": "48d002e9-2d00-42d1-9817-f531e2cc4d5d",
+      "rule": "python:S8409",
+      "severity": "MINOR",
+      "component": "crud-clientes-devops:backend/src/clientes/api.py",
+      "project": "crud-clientes-devops",
+      "line": 128,
+      "hash": "9a1328cdd478efb638cda2aee0a24bdf",
+      "textRange": {
+        "startLine": 128,
+        "endLine": 128,
+        "startOffset": 4,
+        "endOffset": 35
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Remove this redundant \"response_model\" parameter; it duplicates the return type annotation.",
+      "effort": "2min",
+      "debt": "2min",
+      "author": "mauricioramirezv@yahoo.com",
+      "tags": [
+        "fastapi",
+        "api",
+        "redundant"
+      ],
+      "creationDate": "2026-09-17T00:01:01+0000",
+      "updateDate": "2026-09-22T15:47:03+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "CLEAR",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "LOW"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "prioritizedRule": false,
+      "fromSonarQubeUpdate": false,
+      "internalTags": [],
+      "linkedTicketStatus": "NOT_LINKED"
+    }
+  ],
+  "components": [
+    {
+      "key": "crud-clientes-devops",
+      "enabled": true,
+      "qualifier": "TRK",
+      "name": "CRUD Clientes DevOps",
+      "longName": "CRUD Clientes DevOps"
+    },
+    {
+      "key": "crud-clientes-devops:backend/src/clientes/api.py",
+      "enabled": true,
+      "qualifier": "FIL",
+      "name": "api.py",
+      "longName": "backend/src/clientes/api.py",
+      "path": "backend/src/clientes/api.py"
+    }
+  ],
+  "facets": []
+}

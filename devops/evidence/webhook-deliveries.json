@@ -1,0 +1,19 @@
+{
+  "paging": {
+    "pageIndex": 1,
+    "pageSize": 10,
+    "total": 1
+  },
+  "deliveries": [
+    {
+      "id": "ab273aab-531a-49ef-9be1-a94ac06ac00a",
+      "componentKey": "crud-clientes-devops",
+      "ceTaskId": "aaa34148-80b1-471f-a54f-feb6f1484b00",
+      "name": "Jenkins Quality Gate",
+      "url": "http://jenkins:8080/sonarqube-webhook/",
+      "at": "2026-09-22T15:47:39+0000",
+      "success": false,
+      "durationMs": 4038
+    }
+  ]
+}

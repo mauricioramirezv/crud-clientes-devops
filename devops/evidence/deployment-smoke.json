@@ -1,0 +1,61 @@
+{
+  "checkedAt": "2026-09-22T15:58:33.108Z",
+  "base": "http://localhost:8000",
+  "result": "PASS",
+  "checks": [
+    {
+      "method": "GET",
+      "route": "/health",
+      "status": 200,
+      "expected": 200
+    },
+    {
+      "method": "GET",
+      "route": "/",
+      "status": 200,
+      "expected": 200
+    },
+    {
+      "method": "GET",
+      "route": "/docs",
+      "status": 200,
+      "expected": 200
+    },
+    {
+      "method": "POST",
+      "route": "/clientes",
+      "status": 201,
+      "expected": 201
+    },
+    {
+      "method": "GET",
+      "route": "/clientes/1",
+      "status": 200,
+      "expected": 200
+    },
+    {
+      "method": "GET",
+      "route": "/clientes",
+      "status": 200,
+      "expected": 200
+    },
+    {
+      "method": "PUT",
+      "route": "/clientes/1",
+      "status": 200,
+      "expected": 200
+    },
+    {
+      "method": "DELETE",
+      "route": "/clientes/1",
+      "status": 204,
+      "expected": 204
+    },
+    {
+      "method": "GET",
+      "route": "/clientes/1",
+      "status": 404,
+      "expected": 404
+    }
+  ]
+}

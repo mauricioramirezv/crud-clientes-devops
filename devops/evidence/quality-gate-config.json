@@ -1,0 +1,91 @@
+{
+  "name": "CRUD Clientes - Quality Gate",
+  "conditions": [
+    {
+      "id": "108e59f0-898d-4164-9f69-3f61fb907892",
+      "metric": "new_duplicated_lines_density",
+      "op": "GT",
+      "error": "3",
+      "isCaycCondition": true
+    },
+    {
+      "id": "671f2e1d-c570-4538-b087-bf7fc3ca23e4",
+      "metric": "new_coverage",
+      "op": "LT",
+      "error": "90",
+      "isCaycCondition": true
+    },
+    {
+      "id": "2d89cdae-4c4e-4fe0-a770-bd51a608dd0c",
+      "metric": "new_violations",
+      "op": "GT",
+      "error": "0",
+      "isCaycCondition": true
+    },
+    {
+      "id": "d3ff3e7c-cc83-41af-8ac4-4b696b6d444f",
+      "metric": "new_security_hotspots_reviewed",
+      "op": "LT",
+      "error": "100",
+      "isCaycCondition": true
+    },
+    {
+      "id": "0546150f-9a26-4957-8205-5a09cae0a967",
+      "metric": "coverage",
+      "op": "LT",
+      "error": "90",
+      "isCaycCondition": false
+    },
+    {
+      "id": "5153cc59-3a99-44e0-b7dc-7e2bdaaa6516",
+      "metric": "duplicated_lines_density",
+      "op": "GT",
+      "error": "3",
+      "isCaycCondition": false
+    },
+    {
+      "id": "ec6fdbae-2543-4191-beee-524190573fad",
+      "metric": "software_quality_reliability_rating",
+      "op": "GT",
+      "error": "1",
+      "isCaycCondition": false
+    },
+    {
+      "id": "278bbd10-4054-42fe-8d85-7924e079191b",
+      "metric": "software_quality_security_rating",
+      "op": "GT",
+      "error": "1",
+      "isCaycCondition": false
+    },
+    {
+      "id": "8bc7aebf-45b7-4e51-8eaa-fdc9406cf292",
+      "metric": "software_quality_maintainability_rating",
+      "op": "GT",
+      "error": "1",
+      "isCaycCondition": false
+    },
+    {
+      "id": "2c83b24a-ec6b-4722-af8e-3bc694ef48f0",
+      "metric": "security_hotspots_reviewed",
+      "op": "LT",
+      "error": "100",
+      "isCaycCondition": false
+    }
+  ],
+  "isBuiltIn": false,
+  "actions": {
+    "rename": true,
+    "setAsDefault": true,
+    "copy": true,
+    "associateProjects": true,
+    "delete": true,
+    "manageConditions": true,
+    "delegate": true,
+    "manageAiCodeAssurance": false
+  },
+  "caycStatus": "over-compliant",
+  "isDefault": false,
+  "hasStandardConditions": false,
+  "hasMQRConditions": true,
+  "isAiCodeSupported": false
+}
