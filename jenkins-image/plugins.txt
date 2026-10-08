@@ -1,0 +1,9 @@
+sonar
+workflow-aggregator
+pipeline-stage-view
+git
+credentials
+credentials-binding
+pipeline-model-definition
+timestamper
+junit

@@ -249,6 +249,12 @@ El despliegue solamente continúa si las pruebas y el Quality Gate son aprobados
 
 ## Servicios DevOps
 
+La infraestructura local, el arranque automatizado, los plugins, las
+credenciales externas al repositorio, el Quality Gate y las limitaciones del
+despliegue se documentan en [la guía DevOps](devops/GUIA.md). Las evidencias
+incluidas corresponden al 22 de septiembre de 2026; la guía distingue esos
+resultados de las pruebas locales ejecutadas al preparar el PR.
+
 | Servicio | Dirección |
 |---|---|
 | Aplicación | http://localhost:8000 |

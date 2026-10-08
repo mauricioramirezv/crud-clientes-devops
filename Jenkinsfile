@@ -2,6 +2,7 @@ pipeline {
     agent any
 
     options {
+        skipDefaultCheckout(true)
         timestamps()
         disableConcurrentBuilds()
         timeout(time: 30, unit: 'MINUTES')
@@ -17,6 +18,26 @@ pipeline {
     }
 
     stages {
+        stage('Checkout and Prepare') {
+            steps {
+                git branch: 'main', url: 'https://github.com/mauricioramirezv/crud-clientes-devops.git'
+                // Upstream loads an ES module as a classic script. Keep this
+                // correction explicit until it is incorporated upstream.
+                sh '''
+                    set -eu
+                    python3 - <<'PY'
+from pathlib import Path
+page = Path('frontend/index.html')
+old = '<script src="/static/app.js" defer></script>'
+new = '<script type="module" src="/static/app.js"></script>'
+text = page.read_text(encoding='utf-8')
+if old not in text and new not in text:
+    raise SystemExit('Unexpected app.js script tag; review upstream HTML')
+page.write_text(text.replace(old, new), encoding='utf-8')
+PY
+                '''
+            }
+        }
         stage('Verify Environment') {
             steps {
                 sh '''
@@ -120,7 +141,8 @@ pipeline {
                     docker run -d \
                         --name "$CONTAINER_NAME" \
                         --restart unless-stopped \
-                        -p 8000:8000 \
+                        --network devops-net \
+                        -p 127.0.0.1:8000:8000 \
                         "$IMAGE_NAME:$BUILD_NUMBER"
                 '''
             }
